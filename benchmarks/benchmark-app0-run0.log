@@ -1,0 +1,6 @@
+[SPLASH] Benchmarks to run: radix
+
+[SPLASH] [========== Running benchmark radix ==========]
+[SPLASH] Setting up run directory: /tmp/tmpn6mtPE
+[SPLASH] Running '/project/xzgroup-gpu/karthik/official_test/sniper/record-trace --routine-tracing -o /tmp/tmpUUMQzJ/run_benchmarks -e 1 -r 1 -s 0 --roi -- /project/xzgroup-gpu/karthik/official_test/sniper/benchmarks/splash2/splash2/codes/kernels/radix/RADIX -n16384 -p4':
+[SPLASH] [---------- Beginning of output ----------]

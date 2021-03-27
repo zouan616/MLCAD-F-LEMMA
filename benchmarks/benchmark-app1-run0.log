@@ -1,0 +1,6 @@
+[SPLASH] Benchmarks to run: fft
+
+[SPLASH] [========== Running benchmark fft ==========]
+[SPLASH] Setting up run directory: /tmp/tmpVYdcbb
+[SPLASH] Running '/project/xzgroup-gpu/karthik/official_test/sniper/record-trace --routine-tracing -o /tmp/tmpqL4d2C/run_benchmarks -e 1 -r 1 -s 1 --roi -- /project/xzgroup-gpu/karthik/official_test/sniper/benchmarks/splash2/splash2/codes/kernels/fft/FFT -m10 -p1':
+[SPLASH] [---------- Beginning of output ----------]
