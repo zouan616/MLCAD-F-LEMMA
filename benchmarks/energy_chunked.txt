@@ -1,0 +1,549 @@
+[SPLASH] Benchmarks to run: fft
+
+[SPLASH] [========== Running benchmark fft ==========]
+[SPLASH] Setting up run directory: /tmp/tmpYLk5BJ
+[SPLASH] Running 'SNIPER_APP_LD_PRELOAD=$LD_PRELOAD; unset LD_PRELOAD; /home/adith/simulator_sniper/final_sniper_00/run-sniper -n 4 -m 'localhost' -d '/home/adith/simulator_sniper/final_sniper_00/benchmarks' -s categorical_without_pacman:8000 --roi --curdir=/home/adith/simulator_sniper/final_sniper_00/benchmarks  --  /home/adith/simulator_sniper/final_sniper_00/benchmarks/splash2/splash2/codes/kernels/fft/FFT -m10 -p4':
+[SPLASH] [---------- Beginning of output ----------]
+[SNIPER] Start
+Executing Python script /home/adith/simulator_sniper/final_sniper_00/benchmarks/sim.scripts.py
+Creating an actor-critic model for core number: 0
+Loading previously trained model
+Creating an actor-critic model for core number: 1
+Loading previously trained model
+Creating an actor-critic model for core number: 2
+Loading previously trained model
+Creating an actor-critic model for core number: 3
+Loading previously trained model
+EnergyStats Interval: 1000
+Q-Learning Interval   : 8000 2
+Global Budget Interval: 120000 30
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Sniper using SIFT/trace-driven frontend
+[SNIPER] Running pre-ROI region in  CACHE_ONLY mode
+[SNIPER] Running application ROI in DETAILED mode
+[SNIPER] Running post-ROI region in FAST_FORWARD mode
+[SNIPER] --------------------------------------------------------------------------------
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   4 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+[HOOKS] Entering ROI
+[SNIPER] Enabling performance models
+[SNIPER] Setting instrumentation mode to DETAILED
+Global Available Budget, Residual Budget 95.0 88.1376132999
+Current Core, IPC 0 0.295132853241
+Current Core, IPC 1 0.0
+Current Core, IPC 2 0.0
+Current Core, IPC 3 0.0
+Budgets for each core: [5.43230199, 4.8582187730999999, 4.8582187730999999, 4.8582187730999999]
+current_power state0:  6.0358911
+curr_ipc state0:  0.295132853241
+State.0  tensor([-0.9932,  1.2646,  1.3407, -0.0947, -0.2413, -0.5168, -0.3332, -0.6076,
+        -0.1590, -0.4537,  0.0181, -0.1590, -0.1588,  0.4268,  0.4344, -0.1588,
+        -0.1553,  0.4344,  2.3391])
+current_power reward0:  6.0358911
+curr_ipc reward0:  0.295132853241
+CURRENT ENERGY IN REWARD FUNCTION.0: 48227
+DELTA ENERGY IN REWARD FUNCTION.0: 48227
+Reward.0 -2.72281269676 True
+current_power state1:  5.398020859
+curr_ipc state1:  0.0
+State.1  tensor([-1.2278, -0.7826,  1.3407, -0.2468, -0.2722, -0.8028, -0.3332, -0.8257,
+        -0.3243, -0.7843, -0.5309, -0.3243, -0.3241, -0.5390, -0.5321, -0.3241,
+        -0.3833, -0.5321, -0.7075])
+current_power reward1:  5.398020859
+curr_ipc reward1:  0.0
+CURRENT ENERGY IN REWARD FUNCTION.1: 43176
+DELTA ENERGY IN REWARD FUNCTION.1: 43176
+Reward.1 -2.6990104295 True
+current_power state2:  5.398020859
+curr_ipc state2:  0.0
+State.2  tensor([-1.2278, -0.7826,  1.3407, -0.2468, -0.2722, -0.8028, -0.3332, -0.8257,
+        -0.3243, -0.7843, -0.5309, -0.3243, -0.3241, -0.5390, -0.5321, -0.3241,
+        -0.3833, -0.5321, -0.7075])
+current_power reward2:  5.398020859
+curr_ipc reward2:  0.0
+CURRENT ENERGY IN REWARD FUNCTION.2: 43176
+DELTA ENERGY IN REWARD FUNCTION.2: 43176
+Reward.2 -2.6990104295 True
+current_power state3:  5.398020859
+curr_ipc state3:  0.0
+State.3  tensor([-1.2278, -0.7826,  1.3407, -0.2468, -0.2722, -0.8028, -0.3332, -0.8257,
+        -0.3243, -0.7843, -0.5309, -0.3243, -0.3241, -0.5390, -0.5321, -0.3241,
+        -0.3833, -0.5321, -0.7075])
+current_power reward3:  5.398020859
+curr_ipc reward3:  0.0
+CURRENT ENERGY IN REWARD FUNCTION.3: 43176
+DELTA ENERGY IN REWARD FUNCTION.3: 43176
+Reward.3 -2.6990104295 True
+Total Elapsed Time 5.1573870963e+11
+Total Elapsed Time 0.0
+current_power state0:  3.0784518
+curr_ipc state0:  0.559263340154
+State.0  tensor([-0.7833,  1.5520, -0.4111, -0.7998, -0.2374, -0.3473,  0.1069, -0.3825,
+         0.1417, -0.3222, -0.1986,  0.1417,  0.1418,  0.1096,  0.1170,  0.1418,
+         0.2591,  0.1170,  1.2932])
+current_power reward0:  3.0784518
+curr_ipc reward0:  0.559263340154
+CURRENT ENERGY IN REWARD FUNCTION.0: 70237
+DELTA ENERGY IN REWARD FUNCTION.0: 22010
+Reward.0 -11.2099876098 False
+current_power state1:  2.8446616
+curr_ipc state1:  0.00104865704829
+State.1  tensor([-1.2269,  3.6211, -0.4111, -0.8555, -0.1754, -0.6963,  0.1069, -0.7298,
+         0.0214, -0.6709,  0.2926,  0.0214,  0.0216,  0.9313,  0.9393,  0.0216,
+         0.0519,  0.9393,  0.0200])
+current_power reward1:  2.8446616
+curr_ipc reward1:  0.00104865704829
+CURRENT ENERGY IN REWARD FUNCTION.1: 60815
+DELTA ENERGY IN REWARD FUNCTION.1: 17639
+Reward.1 -10.0667372085 False
+current_power state2:  5.5426763
+curr_ipc state2:  0.000116477185419
+State.2  tensor([-1.2277,  1.9370,  1.3407, -0.2123, -0.2296, -0.7792,  0.1069, -0.7893,
+        -0.0688, -0.7692, -0.2420, -0.0688, -0.0686, -0.0201, -0.0128, -0.0686,
+        -0.0724, -0.0128, -0.7075])
+current_power reward2:  5.5426763
+curr_ipc reward2:  0.000116477185419
+CURRENT ENERGY IN REWARD FUNCTION.2: 86497
+DELTA ENERGY IN REWARD FUNCTION.2: 43321
+Reward.2 -3.42217115731 True
+current_power state3:  5.3981081
+curr_ipc state3:  0.0
+State.3  tensor([-1.2278, -0.7826,  1.3407, -0.2467, -0.2722, -0.8028,  0.1069, -0.8257,
+        -0.3243, -0.7843, -0.5309, -0.3243, -0.3241, -0.5390, -0.5321, -0.3241,
+        -0.3833, -0.5321, -0.7075])
+current_power reward3:  5.3981081
+curr_ipc reward3:  0.0
+CURRENT ENERGY IN REWARD FUNCTION.3: 86352
+DELTA ENERGY IN REWARD FUNCTION.3: 43176
+Reward.3 -2.6994466345 True
+current_power state0:  5.400590859
+curr_ipc state0:  0.0
+State.0  tensor([-1.2278, -0.7826,  1.3407, -0.2461, -0.2722, -0.8028, -0.8525, -0.8257,
+        -0.3243, -0.7843, -0.5309, -0.3243, -0.3241, -0.5390, -0.5321, -0.3241,
+        -0.3833, -0.5321, -0.7075])
+current_power reward0:  5.400590859
+curr_ipc reward0:  0.0
+CURRENT ENERGY IN REWARD FUNCTION.0: 117104
+DELTA ENERGY IN REWARD FUNCTION.0: 46867
+Reward.0 -0.158555655 False
+current_power state1:  2.104732845
+curr_ipc state1:  0.022696263644
+State.1  tensor([-1.2097,  3.0531, -0.4111, -1.0319, -0.2722, -0.7770, -0.8525, -0.7994,
+        -0.3093, -0.7588, -0.4442, -0.3093, -0.3091, -0.1787, -0.1715, -0.3091,
+        -0.3625, -0.1715, -0.6620])
+current_power reward1:  2.104732845
+curr_ipc reward1:  0.022696263644
+CURRENT ENERGY IN REWARD FUNCTION.1: 78937
+DELTA ENERGY IN REWARD FUNCTION.1: 18122
+Reward.1 -13.7447333769 False
+current_power state2:  2.104732845
+curr_ipc state2:  0.147430117223
+State.2  tensor([-1.1106,  0.9085, -0.4111, -1.0319, -0.2722, -0.7589, -0.8525, -0.8048,
+        -0.2792, -0.7250, -0.5020, -0.2792, -0.2790, -0.3372, -0.3302, -0.2790,
+        -0.3418, -0.3302, -0.2528])
+current_power reward2:  2.104732845
+curr_ipc reward2:  0.147430117223
+CURRENT ENERGY IN REWARD FUNCTION.2: 106736
+DELTA ENERGY IN REWARD FUNCTION.2: 20239
+Reward.2 -13.6199995233 False
+current_power state3:  5.43941123
+curr_ipc state3:  0.0113760290816
+State.3  tensor([-1.2187,  4.2067,  1.3407, -0.2369, -0.2722, -0.7848, -0.8525, -0.8056,
+        -0.3093, -0.7676, -0.4442, -0.3093, -0.3091, -0.2652, -0.2580, -0.3091,
+        -0.3625, -0.2580, -0.6620])
+current_power reward3:  5.43941123
+curr_ipc reward3:  0.0113760290816
+CURRENT ENERGY IN REWARD FUNCTION.3: 133234
+DELTA ENERGY IN REWARD FUNCTION.3: 46882
+Reward.3 -2.89458625542 True
+current_power state0:  1.251629694
+curr_ipc state0:  0.0
+State.0  tensor([-1.2278, -0.7826, -1.2870, -1.2353, -0.2722, -0.8028, -0.7029, -0.8257,
+        -0.3243, -0.7843, -0.5309, -0.3243, -0.3241, -0.5390, -0.5321, -0.3241,
+        -0.3833, -0.5321, -0.7075])
+current_power reward0:  1.251629694
+curr_ipc reward0:  0.0
+CURRENT ENERGY IN REWARD FUNCTION.0: 129161
+DELTA ENERGY IN REWARD FUNCTION.0: 12057
+Reward.0 -20.90336148 False
+current_power state1:  1.251918694
+curr_ipc state1:  0.0994840280137
+State.1  tensor([-1.1487,  3.0049, -1.2870, -1.2353, -0.2645, -0.7424, -0.7029, -0.7406,
+        -0.1289, -0.7406, -0.3287, -0.1289, -0.1287,  0.0808,  0.0882, -0.1287,
+        -0.1139,  0.0882, -0.7075])
+current_power reward1:  1.251918694
+curr_ipc reward1:  0.0994840280137
+CURRENT ENERGY IN REWARD FUNCTION.1: 90764
+DELTA ENERGY IN REWARD FUNCTION.1: 11827
+Reward.1 -17.9320163675 False
+current_power state2:  2.24221227
+curr_ipc state2:  0.0772121155045
+State.2  tensor([-1.1664,  3.1439, -0.4111, -0.9992, -0.2684, -0.7517, -0.7029, -0.7669,
+        -0.2040, -0.7385, -0.2998, -0.2040, -0.2039, -0.0201, -0.0128, -0.2039,
+        -0.2175, -0.0128, -0.7075])
+current_power reward2:  2.24221227
+curr_ipc reward2:  0.0772121155045
+CURRENT ENERGY IN REWARD FUNCTION.2: 126405
+DELTA ENERGY IN REWARD FUNCTION.2: 19669
+Reward.2 -13.0028204 False
+current_power state3:  3.5118791
+curr_ipc state3:  0.0922839613145
+State.3  tensor([-1.1544,  3.1305,  0.4648, -0.6964, -0.2684, -0.7483, -0.7029, -0.7700,
+        -0.1590, -0.7307, -0.3864, -0.1590, -0.1588, -0.1498, -0.1426, -0.1588,
+        -0.2175, -0.1426, -0.5711])
+current_power reward3:  3.5118791
+curr_ipc reward3:  0.0922839613145
+CURRENT ENERGY IN REWARD FUNCTION.3: 164781
+DELTA ENERGY IN REWARD FUNCTION.3: 31547
+Reward.3 -6.63941440419 False
+current_power state0:  6.220548
+curr_ipc state0:  0.0754986784948
+State.0  tensor([-1.1678,  1.1724,  1.3407, -0.0506, -0.2567, -0.6919, -0.6061, -0.6934,
+        -0.0688, -0.6881, -0.2853, -0.0688, -0.0686,  0.0087,  0.0161, -0.0686,
+        -0.0517,  0.0161,  0.5202])
+current_power reward0:  6.220548
+curr_ipc reward0:  0.0754986784948
+CURRENT ENERGY IN REWARD FUNCTION.0: 173682
+DELTA ENERGY IN REWARD FUNCTION.0: 44521
+Reward.0 -3.86573137151 True
+current_power state1:  5.5954209
+curr_ipc state1:  0.0257887522807
+State.1  tensor([-1.2073,  2.7471,  1.3407, -0.1997, -0.2722, -0.7751, -0.6061, -0.7994,
+        -0.2792, -0.7557, -0.5020, -0.2792, -0.2790, -0.5102, -0.5033, -0.2790,
+        -0.3833, -0.5033, -0.7075])
+current_power reward1:  5.5954209
+curr_ipc reward1:  0.0257887522807
+CURRENT ENERGY IN REWARD FUNCTION.1: 134762
+DELTA ENERGY IN REWARD FUNCTION.1: 43998
+Reward.1 -3.66022188222 True
+current_power state2:  2.104732845
+curr_ipc state2:  0.0163366824566
+State.2  tensor([-1.2148,  4.1695, -0.4111, -1.0319, -0.2722, -0.7941, -0.6061, -0.8172,
+        -0.3243, -0.7754, -0.4876, -0.3243, -0.3241, -0.4958, -0.4889, -0.3241,
+        -0.3833, -0.4889, -0.7075])
+current_power reward2:  2.104732845
+curr_ipc reward2:  0.0163366824566
+CURRENT ENERGY IN REWARD FUNCTION.2: 143657
+DELTA ENERGY IN REWARD FUNCTION.2: 17252
+Reward.2 -13.751092958 False
+current_power state3:  3.421500213
+curr_ipc state3:  0.023780125825
+State.3  tensor([-1.2089,  1.3442,  0.4648, -0.7180, -0.2722, -0.7801, -0.6061, -0.8017,
+        -0.3243, -0.7624, -0.4876, -0.3243, -0.3241, -0.4670, -0.4600, -0.3241,
+        -0.3833, -0.4600, -0.7075])
+current_power reward3:  3.421500213
+curr_ipc reward3:  0.023780125825
+CURRENT ENERGY IN REWARD FUNCTION.3: 192577
+DELTA ENERGY IN REWARD FUNCTION.3: 27796
+Reward.3 -7.15981267468 False
+current_power state0:  5.45032122
+curr_ipc state0:  1.46248827759
+State.0  tensor([-0.0656,  0.7067, -0.4111, -0.2343, -0.2684, -0.1229, -0.6237, -0.1590,
+        -0.3243, -0.0981, -0.2998, -0.3243, -0.3241, -0.2219, -0.4456, -0.3241,
+        -0.3833, -0.4456, -0.4347])
+current_power reward0:  5.45032122
+curr_ipc reward0:  1.46248827759
+CURRENT ENERGY IN REWARD FUNCTION.0: 203412
+DELTA ENERGY IN REWARD FUNCTION.0: 29730
+Reward.0 1.37239212759 True
+current_power state1:  5.077221854
+curr_ipc state1:  1.43069767442
+State.1  tensor([-0.0909,  0.8114, -0.4111, -0.3232, -0.2684, -0.1531, -0.6237, -0.1846,
+        -0.3243, -0.1314, -0.3287, -0.3243, -0.3241, -0.2507, -0.2725, -0.3241,
+        -0.3833, -0.2725, -0.7075])
+current_power reward1:  5.077221854
+curr_ipc reward1:  1.43069767442
+CURRENT ENERGY IN REWARD FUNCTION.1: 164250
+DELTA ENERGY IN REWARD FUNCTION.1: 29488
+Reward.1 0.335682269919 True
+current_power state2:  2.218685553
+curr_ipc state2:  1.23262585296
+State.2  tensor([-0.2483,  1.2373, -1.2870, -1.0048, -0.2645, -0.3470, -0.6237, -0.3532,
+        -0.2040, -0.3414, -0.2131, -0.2040, -0.2039, -0.0633, -0.0705, -0.2039,
+        -0.2175, -0.0705, -0.1164])
+current_power reward2:  2.218685553
+curr_ipc reward2:  1.23262585296
+CURRENT ENERGY IN REWARD FUNCTION.2: 159756
+DELTA ENERGY IN REWARD FUNCTION.2: 16099
+Reward.2 -11.9650402475 False
+current_power state3:  8.54662681
+curr_ipc state3:  1.33993666734
+State.3  tensor([-0.1630,  0.8299,  0.4648,  0.5039, -0.2645, -0.0746, -0.6237, -0.0918,
+        -0.2040, -0.0628, -0.1553, -0.2040, -0.2039, -0.0057, -0.0272, -0.2039,
+        -0.2175, -0.0272, -0.4347])
+current_power reward3:  8.54662681
+curr_ipc reward3:  1.33993666734
+CURRENT ENERGY IN REWARD FUNCTION.3: 238024
+DELTA ENERGY IN REWARD FUNCTION.3: 45447
+Reward.3 -17.1021035172 True
+current_power state0:  7.52744984
+curr_ipc state0:  1.73660268078
+State.0  tensor([ 0.1522,  0.6764,  0.4648,  0.2609, -0.2684,  0.0800, -0.9846,  0.0413,
+        -0.3243,  0.1056, -0.1842, -0.3243, -0.3241, -0.1931, -0.5321, -0.3241,
+        -0.3833, -0.5321, -0.7075])
+current_power reward0:  7.52744984
+curr_ipc reward0:  1.73660268078
+CURRENT ENERGY IN REWARD FUNCTION.0: 264390
+DELTA ENERGY IN REWARD FUNCTION.0: 60978
+Reward.0 -8.73913656922 True
+current_power state1:  4.872642458
+curr_ipc state1:  1.55236044902
+State.1  tensor([ 0.0058,  0.5540, -0.4111, -0.3720, -0.2684, -0.0899, -0.9846, -0.1242,
+        -0.3243, -0.0664, -0.2709, -0.3243, -0.3241, -0.2796, -0.2725, -0.3241,
+        -0.3833, -0.2725, -0.7075])
+current_power reward1:  4.872642458
+curr_ipc reward1:  1.55236044902
+CURRENT ENERGY IN REWARD FUNCTION.1: 200163
+DELTA ENERGY IN REWARD FUNCTION.1: 35913
+Reward.1 1.48024202452 True
+current_power state2:  4.144442226
+curr_ipc state2:  1.56791477362
+State.2  tensor([ 0.0182,  0.5545, -0.4111, -0.5456, -0.2684, -0.0905, -0.9846, -0.1250,
+        -0.3243, -0.0669, -0.2998, -0.3243, -0.3241, -0.3084, -0.3013, -0.3241,
+        -0.3833, -0.3013, -0.7075])
+current_power reward2:  4.144442226
+curr_ipc reward2:  1.56791477362
+CURRENT ENERGY IN REWARD FUNCTION.2: 195809
+DELTA ENERGY IN REWARD FUNCTION.2: 36053
+Reward.2 -2.00096796188 False
+current_power state3:  12.42548056
+curr_ipc state3:  1.58195097796
+State.3  tensor([ 0.0293,  0.3857,  1.3407,  1.4287, -0.2684,  0.1669, -0.9846,  0.1240,
+        -0.3243,  0.1950, -0.2420, -0.3243, -0.3241, -0.2507, -0.2436, -0.3241,
+        -0.3833, -0.2436, -0.7075])
+current_power reward3:  12.42548056
+curr_ipc reward3:  1.58195097796
+CURRENT ENERGY IN REWARD FUNCTION.3: 325753
+DELTA ENERGY IN REWARD FUNCTION.3: 87729
+Reward.3 -36.2543579565 True
+current_power state0:  2.8461687
+curr_ipc state0:  0.328661027987
+State.0  tensor([-0.9666, -0.1064, -1.2870, -0.8552, -0.2490, -0.4037, -0.9318, -0.3532,
+         0.6527, -0.4360,  0.4660,  0.6527,  0.6528,  0.5277,  0.2757,  0.6528,
+         0.9430,  0.2757, -0.6166])
+current_power reward0:  2.8461687
+curr_ipc reward0:  0.328661027987
+CURRENT ENERGY IN REWARD FUNCTION.0: 279893
+DELTA ENERGY IN REWARD FUNCTION.0: 15503
+Reward.0 -12.602005422 False
+current_power state1:  4.4729846
+curr_ipc state1:  0.523358203298
+State.1  tensor([-0.8119, -0.0504, -0.4111, -0.4673, -0.2490, -0.3775, -0.9318, -0.3269,
+         0.6377, -0.4100,  0.4949,  0.6377,  0.3973,  0.5565,  0.3190,  0.3973,
+        -0.3833,  0.3190, -0.7075])
+current_power reward1:  4.4729846
+curr_ipc reward1:  0.523358203298
+CURRENT ENERGY IN REWARD FUNCTION.1: 232480
+DELTA ENERGY IN REWARD FUNCTION.1: 32317
+Reward.1 -1.4028126622 False
+current_power state2:  4.3956333
+curr_ipc state2:  0.947612944569
+State.2  tensor([-0.4747, -0.1469, -0.4111, -0.4857, -0.2490, -0.1254, -0.9318, -0.0833,
+         0.6527, -0.1532,  0.5816,  0.6527,  0.6528,  0.6862,  0.4344,  0.6528,
+         0.9430,  0.4344, -0.5256])
+current_power reward2:  4.3956333
+curr_ipc reward2:  0.947612944569
+CURRENT ENERGY IN REWARD FUNCTION.2: 231985
+DELTA ENERGY IN REWARD FUNCTION.2: 36176
+Reward.2 -1.36531442093 False
+current_power state3:  2.6980264
+curr_ipc state3:  0.389287959217
+State.3  tensor([-0.9184, -0.3978, -1.2870, -0.8905, -0.2490, -0.4071, -0.9318, -0.3547,
+         0.6527, -0.4407,  0.4371,  0.6527,  0.5627,  0.4700,  0.2325,  0.5627,
+         0.4249,  0.2325, -0.7075])
+current_power reward3:  2.6980264
+curr_ipc reward3:  0.389287959217
+CURRENT ENERGY IN REWARD FUNCTION.3: 342296
+DELTA ENERGY IN REWARD FUNCTION.3: 16543
+Reward.3 -10.4116739063 False
+current_power state0:  11.418272859
+curr_ipc state0:  1.63659085229
+State.0  tensor([ 0.0728,  0.7882,  1.3407,  1.1886, -0.2722,  0.0563, -0.9846,  0.0536,
+        -0.3243,  0.0578, -0.5309, -0.3243, -0.3241, -0.5390, -0.5321, -0.3241,
+        -0.3833, -0.5321, -0.7075])
+current_power reward0:  11.418272859
+curr_ipc reward0:  1.63659085229
+CURRENT ENERGY IN REWARD FUNCTION.0: 364788
+DELTA ENERGY IN REWARD FUNCTION.0: 84895
+Reward.0 -28.2932634927 True
+current_power state1:  4.984661845
+curr_ipc state1:  1.698125
+State.1  tensor([ 0.1217,  0.5708, -0.4111, -0.3453, -0.2722, -0.0110, -0.9846, -0.0206,
+        -0.3243, -0.0046, -0.5309, -0.3243, -0.3241, -0.5390, -0.5321, -0.3241,
+        -0.3833, -0.5321, -0.7075])
+current_power reward1:  4.984661845
+curr_ipc reward1:  1.698125
+CURRENT ENERGY IN REWARD FUNCTION.1: 267077
+DELTA ENERGY IN REWARD FUNCTION.1: 34597
+Reward.1 1.0659096405 True
+current_power state2:  4.906982845
+curr_ipc state2:  1.6846875
+State.2  tensor([ 0.1110,  0.6124, -0.4111, -0.3638, -0.2722, -0.0291, -0.9846, -0.0392,
+        -0.3243, -0.0222, -0.5309, -0.3243, -0.3241, -0.5390, -0.5321, -0.3241,
+        -0.3833, -0.5321, -0.7075])
+current_power reward2:  4.906982845
+curr_ipc reward2:  1.6846875
+CURRENT ENERGY IN REWARD FUNCTION.2: 266673
+DELTA ENERGY IN REWARD FUNCTION.2: 34688
+Reward.2 1.4408671405 True
+current_power state3:  6.387086213
+curr_ipc state3:  1.61625161625
+State.3  tensor([ 0.0566,  0.8711,  0.4648, -0.0109, -0.2722, -0.0684, -0.9846, -0.0732,
+        -0.3243, -0.0649, -0.5309, -0.3243, -0.3241, -0.5390, -0.5321, -0.3241,
+        -0.3833, -0.5321, -0.7075])
+current_power reward3:  6.387086213
+curr_ipc reward3:  1.61625161625
+CURRENT ENERGY IN REWARD FUNCTION.3: 396973
+DELTA ENERGY IN REWARD FUNCTION.3: 54677
+Reward.3 -6.02808558325 True
+current_power state0:  2.5436449
+curr_ipc state0:  0.380709482179
+State.0  tensor([-0.9252, -0.4861, -1.2870, -0.9273, -0.2722, -0.4866, -0.9406, -0.4506,
+         0.5174, -0.5088,  0.2493,  0.5174,  0.3973,  0.2682,  0.2325,  0.3973,
+        -0.3833,  0.2325, -0.6620])
+current_power reward0:  2.5436449
+curr_ipc reward0:  0.380709482179
+CURRENT ENERGY IN REWARD FUNCTION.0: 383122
+DELTA ENERGY IN REWARD FUNCTION.0: 18334
+Reward.0 -14.0625759678 False
+current_power state1:  7.3161532
+curr_ipc state1:  0.577289157728
+State.1  tensor([-0.7690, -0.2642,  0.4648,  0.2106, -0.2722, -0.2706, -0.9406, -0.2248,
+         0.7128, -0.3003,  0.4804,  0.7128,  0.4725,  0.5421,  0.3334,  0.4725,
+        -0.3833,  0.3334, -0.6166])
+current_power reward1:  7.3161532
+curr_ipc reward1:  0.577289157728
+CURRENT ENERGY IN REWARD FUNCTION.1: 320853
+DELTA ENERGY IN REWARD FUNCTION.1: 53776
+Reward.1 -11.7123829768 True
+current_power state2:  2.831763
+curr_ipc state2:  1.1419179837
+State.2  tensor([-0.3203,  0.1303, -1.2870, -0.8586, -0.2722, -0.1407, -0.9406, -0.0887,
+         0.6377, -0.1750,  0.4949,  0.6377,  0.3973,  0.5709,  0.3334,  0.3973,
+        -0.3833,  0.3334, -0.6166])
+current_power reward2:  2.831763
+curr_ipc reward2:  1.1419179837
+CURRENT ENERGY IN REWARD FUNCTION.2: 288891
+DELTA ENERGY IN REWARD FUNCTION.2: 22218
+Reward.2 -8.9903608818 False
+current_power state3:  4.6443683
+curr_ipc state3:  0.443751739507
+State.3  tensor([-0.8751, -0.5879, -0.4111, -0.4264, -0.2722, -0.3993, -0.9406, -0.3470,
+         0.6677, -0.4329,  0.4227,  0.6677,  0.4274,  0.4412,  0.2469,  0.4274,
+        -0.3833,  0.2469, -0.7075])
+current_power reward3:  4.6443683
+curr_ipc reward3:  0.443751739507
+CURRENT ENERGY IN REWARD FUNCTION.3: 430437
+DELTA ENERGY IN REWARD FUNCTION.3: 33464
+Reward.3 -0.625500625993 False
+[TRACE:3] -- DONE --
+[TRACE:1] -- DONE --
+[TRACE:2] -- DONE --
+current_power state0:  5.401395859
+curr_ipc state0:  0.0834060442084
+State.0  tensor([-1.1615,  1.3896,  1.3407, -0.2459, -0.2490, -0.6477, -0.3508, -0.6996,
+        -0.2191, -0.6101, -0.0252, -0.2191, -0.2490,  0.1241, -0.2003, -0.2490,
+        -0.3418, -0.2003,  0.0200])
+current_power reward0:  5.401395859
+curr_ipc reward0:  0.0834060442084
+CURRENT ENERGY IN REWARD FUNCTION.0: 429380
+DELTA ENERGY IN REWARD FUNCTION.0: 46258
+Reward.0 -0.0711246107916 False
+current_power state1:  2.68464372
+curr_ipc state1:  0.28177133062
+State.1  tensor([-1.0039,  1.2581, -0.4111, -0.8937, -0.2335, -0.4813, -0.3508, -0.5875,
+        -0.2040, -0.4079,  0.2926, -0.2040, -0.2941,  0.7295,  0.4200, -0.2941,
+        -0.3625,  0.4200,  0.7476])
+current_power reward1:  2.68464372
+curr_ipc reward1:  0.28177133062
+CURRENT ENERGY IN REWARD FUNCTION.1: 340027
+DELTA ENERGY IN REWARD FUNCTION.1: 19174
+Reward.1 -10.5861039349 False
+current_power state2:  1.34363129
+curr_ipc state2:  0.75475591461
+State.2  tensor([-0.6280,  0.9668, -1.2870, -1.2134, -0.2258, -0.3258, -0.3508, -0.4676,
+        -0.1139, -0.2291,  0.4082, -0.1139, -0.2189,  0.8736,  0.5498, -0.2189,
+        -0.3833,  0.5498, -0.0709])
+current_power reward2:  1.34363129
+curr_ipc reward2:  0.75475591461
+CURRENT ENERGY IN REWARD FUNCTION.2: 301052
+DELTA ENERGY IN REWARD FUNCTION.2: 12161
+Reward.2 -16.8181815009 False
+current_power state3:  5.66445151
+curr_ipc state3:  0.556198217915
+State.3  tensor([-0.7858,  1.1446,  1.3407, -0.1832, -0.2219, -0.3501, -0.3508, -0.4924,
+        -0.1289, -0.2530,  0.3649, -0.1289, -0.2490,  0.8881,  0.5931, -0.2490,
+        -0.3833,  0.5931, -0.3437])
+current_power reward3:  5.66445151
+curr_ipc reward3:  0.556198217915
+CURRENT ENERGY IN REWARD FUNCTION.3: 479582
+DELTA ENERGY IN REWARD FUNCTION.3: 49145
+Reward.3 -3.47496546659 True
+[SNIPER] Disabling performance models
+[SNIPER] Leaving ROI after 40.86 seconds
+[SNIPER] Simulated 0.4M instructions, 1.0M cycles, 0.39 IPC
+[SNIPER] Simulation speed 9.1 KIPS (2.3 KIPS / target core - 438675.7ns/instr)
+[SNIPER] Sampling: executed 10.11% of simulated time in detailed mode
+[SNIPER] Setting instrumentation mode to FAST_FORWARD
+[TRACE:0] -- DONE --
+[HOOKS] Leaving ROI
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0                47              4       0.08511
+
+                 TIMING INFORMATION
+Start time                        :      -1844408245
+Initialization finish time        :      -1844407775
+Overall finish time               :      -1844407728
+Total time with initialization    :              517
+Total time without initialization :               47
+Overall transpose time            :                4
+Overall transpose fraction        :          0.08511
+
+[RECORD-TRACE] Using the Pin frontend (sift/recorder)
+Sim Hook End.. Displaying Final Powers and Energies of each core.
+0.STATIC POWER (W) 4.7896069
+0.DYNAMIC POWER (W) 0.611788959
+0.STATIC ENERGY (nJ) 270085
+0.DYNAMIC ENERGY (nJ) 164695
+1.STATIC POWER (W) 1.7155273
+1.DYNAMIC POWER (W) 0.96911642
+1.STATIC ENERGY (nJ) 205427
+1.DYNAMIC ENERGY (nJ) 137284
+2.STATIC POWER (W) 0.9537337
+2.DYNAMIC POWER (W) 0.38989759
+2.STATIC ENERGY (nJ) 182769
+2.DYNAMIC ENERGY (nJ) 119625
+3.STATIC POWER (W) 4.7896069
+3.DYNAMIC POWER (W) 0.87484461
+3.STATIC ENERGY (nJ) 311389
+3.DYNAMIC ENERGY (nJ) 173856
+TOTAL ENERGY (nJ) 1565130
+Total Elapsed Time 5.96220893475e+11
+Total Elapsed Time 5.96220393475e+11
+Discounted Rewards.0 tensor(-76.4245)
+NUMBER OF REWARDS: 11
+LOSS.0: tensor(0.4651, grad_fn=<AddBackward0>)
+Discounted Rewards.1 tensor(-55.6674)
+NUMBER OF REWARDS: 11
+LOSS.1: tensor(0.5758, grad_fn=<AddBackward0>)
+Discounted Rewards.2 tensor(-67.0534)
+NUMBER OF REWARDS: 11
+LOSS.2: tensor(0.3047, grad_fn=<AddBackward0>)
+Discounted Rewards.3 tensor(-73.0284)
+NUMBER OF REWARDS: 11
+LOSS.3: tensor(0.4158, grad_fn=<AddBackward0>)
+ALL LOSSES:  1.76136255264
+ALL REWARDS: -272.173706055
+[SNIPER] End
+[SNIPER] Elapsed time: 44.00 seconds
+[SPLASH] [----------    End of output    ----------]
+[SPLASH] Done.
