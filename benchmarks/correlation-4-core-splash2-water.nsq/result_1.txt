@@ -1,0 +1,118 @@
+[SPLASH] Benchmarks to run: water.nsq
+
+[SPLASH] [========== Running benchmark water.nsq ==========]
+[SPLASH] Setting up run directory: /tmp/tmpeO7_Xp
+[SPLASH] Running 'SNIPER_APP_LD_PRELOAD=$LD_PRELOAD; unset LD_PRELOAD; /project/xzgroup-gpu/anzou/hifive/final_sniper_00/run-sniper -n 4 -m 'localhost' -d '/project/xzgroup-gpu/anzou/hifive/final_sniper_00/benchmarks' -s continuous_ipc_power_water:500000 --roi --curdir=/project/xzgroup-gpu/anzou/hifive/final_sniper_00/benchmarks  --  /project/xzgroup-gpu/anzou/hifive/final_sniper_00/benchmarks/splash2/splash2/codes/apps/water-nsquared/WATER-NSQUARED < input':
+[SPLASH] [---------- Beginning of output ----------]
+[SNIPER] Start
+Executing Python script /project/xzgroup-gpu/anzou/hifive/final_sniper_00/benchmarks/sim.scripts.py
+Creating an actor-critic model for core number: 0
+Creating an actor-critic model for core number: 1
+Creating an actor-critic model for core number: 2
+Creating an actor-critic model for core number: 3
+EnergyStats Interval: 1000
+Q-Learning Interval   : 500000 125
+Global Budget Interval: 7500000 1875
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Sniper using SIFT/trace-driven frontend
+[SNIPER] Running pre-ROI region in  CACHE_ONLY mode
+[SNIPER] Running application ROI in DETAILED mode
+[SNIPER] Running post-ROI region in FAST_FORWARD mode
+[SNIPER] --------------------------------------------------------------------------------
+Using 4 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        4
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999899999999995
+BOXL =  24.851010
+CUTOFF =   6.212752
+XS =   3.106380
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+[HOOKS] Entering ROI
+[SNIPER] Enabling performance models
+[SNIPER] Setting instrumentation mode to DETAILED
+Global Available Budget, Residual Budget 95.0 88.3349399079
+Current Core, IPC 0 1.0
+Current Core, IPC 1 0.0
+Current Core, IPC 2 0.0
+Current Core, IPC 3 0.0
+Budgets for each core: [4.8579249689999999, 4.8579123690000001, 4.8579123690000001, 4.8579123690000001]
+current_power state0:  5.39769441
+curr_ipc state0:  1.0
+State.0  tensor([-0.5161, -1.3732,  1.3088, -0.2337, -0.6288, -2.0438, -0.2406, -2.1267,
+        -0.1882, -1.9970, -1.5705, -0.1882, -0.1866, -1.5635, -0.4823, -0.1866,
+        -0.1841, -0.4823, -0.1706])
+energy reward term.0 -0.000825291822546
+current_power state1:  5.39768041
+curr_ipc state1:  0.0
+State.1  tensor([-2.1888, -1.3732,  1.3088, -0.2337, -0.6288, -2.0438, -0.2406, -2.1267,
+        -0.1882, -1.9970, -1.5705, -0.1882, -0.1866, -1.5635, -0.4823, -0.1866,
+        -0.1841, -0.4823, -0.1706])
+energy reward term.1 -0.000825291822546
+current_power state2:  5.39768041
+curr_ipc state2:  0.0
+State.2  tensor([-2.1888, -1.3732,  1.3088, -0.2337, -0.6288, -2.0438, -0.2406, -2.1267,
+        -0.1882, -1.9970, -1.5705, -0.1882, -0.1866, -1.5635, -0.4823, -0.1866,
+        -0.1841, -0.4823, -0.1706])
+energy reward term.2 -0.000825291822546
+current_power state3:  5.39768041
+curr_ipc state3:  0.0
+State.3  tensor([-2.1888, -1.3732,  1.3088, -0.2337, -0.6288, -2.0438, -0.2406, -2.1267,
+        -0.1882, -1.9970, -1.5705, -0.1882, -0.1866, -1.5635, -0.4823, -0.1866,
+        -0.1841, -0.4823, -0.1706])
+energy reward term.3 -0.000825291822546
+weight_ipc.0 0.513073
+weight_power.0 1.27733
+weight_ipc.1 -0.64514
+weight_power.1 0.484773
+weight_ipc.2 0.0258936
+weight_power.2 -0.0249901
+weight_ipc.3 -0.58155
+weight_power.3 0.825762
+ipc, threshold, avg.0 1.0 0.513073 0.5
+power, threshold, avg.0 5.39769441 1.27733 2.698847205
+ipc, threshold, avg.1 0.0 -0.64514 0.0
+power, threshold, avg.1 5.39768041 0.484773 2.698840205
+ipc, threshold, avg.2 0.0 0.0258936 0.0
+power, threshold, avg.2 5.39768041 -0.0249901 2.698840205
+ipc, threshold, avg.3 0.0 -0.58155 0.0
+power, threshold, avg.3 5.39768041 0.825762 2.698840205
+Total Elapsed Time 1.13859083366e+13
+Total Elapsed Time 0.0
+ipc, threshold, avg.0 0.143105590062 0.513073 0.381035196687
+power, threshold, avg.0 5.39769441 1.27733 3.59846294
+ipc, threshold, avg.1 0.0 -0.64514 0.0
+power, threshold, avg.1 5.39768041 0.484773 3.59845360667
+ipc, threshold, avg.2 0.0 0.0258936 0.0
+power, threshold, avg.2 5.39768041 -0.0249901 3.59845360667
+ipc, threshold, avg.3 0.0 -0.58155 0.0
+power, threshold, avg.3 5.39768041 0.825762 3.59845360667
+ipc, threshold, avg.0 0.37746909647 0.513073 0.380143671633
+power, threshold, avg.0 5.39769441 1.27733 4.0482708075
+ipc, threshold, avg.1 0.0 -0.64514 0.0
+power, threshold, avg.1 5.39768041 0.484773 4.0482603075
+ipc, threshold, avg.2 0.0 0.0258936 0.0
+power, threshold, avg.2 5.39768041 -0.0249901 4.0482603075
+ipc, threshold, avg.3 0.0 -0.58155 0.0
+power, threshold, avg.3 5.39768041 0.825762 4.0482603075
