@@ -1,0 +1,4 @@
+for i in {1..100};
+do
+grep -A 2 'State.0' result_${i}.txt >> performance_counter.txt
+done;

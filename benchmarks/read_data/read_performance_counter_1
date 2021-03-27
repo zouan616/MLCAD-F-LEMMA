@@ -1,0 +1,4 @@
+for i in {1..100};
+do
+awk -F"State.0" '/State.0/{print $2}' result_${i}.txt > performance_counter1_${i}.txt
+done;

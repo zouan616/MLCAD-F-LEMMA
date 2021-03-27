@@ -1,0 +1,4 @@
+for i in {1..100};
+do
+awk -F"weight_power.0" '/weight_power.0/{print $2}' result_${i}.txt >> power_weight.txt
+done;

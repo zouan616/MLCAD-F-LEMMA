@@ -1,0 +1,4 @@
+for i in {1..100};
+do
+awk -F"weight_ipc.0" '/weight_ipc.0/{print $2}' result_${i}.txt >> IPC_weight.txt
+done;
